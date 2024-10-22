@@ -1,0 +1,255 @@
+.services-section {
+    text-align: center;
+    
+    padding: 3% 2%;
+    background-color: rgb(0, 0, 0);
+}
+
+.services-section-mobile {
+    display: none;
+}
+
+.services-section h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+
+.services-p {
+    color: #ffffff;
+    width: 80%;
+    margin: auto;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.services-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 3%;
+}
+
+.slide-img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 10px;
+    position: relative; /* Added for button positioning */
+}
+
+.vertical-line {
+    height: 300px;
+    width: 2px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.item-id {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+.service-text {
+    text-align: left;
+    width: 40%;
+    margin-left: 2%;
+    color: rgb(240, 240, 240);
+}
+
+.service-text h3 {
+    background: linear-gradient(90deg, #15F5BA, #0066ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.service-text p {
+    color: #ebebeb;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+
+/* Small screens (up to 480px) */
+@media (max-width: 480px) {
+    .services-section {
+        display: none;
+    }
+
+    .services-section-mobile {
+        text-align: center;
+        display: block;
+        background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+        padding: 4% 3%;
+    }
+
+    .services-section-mobile h1 {
+        color: white;
+        font-size: 20px;
+    }
+
+    .services-p {
+        width: 100%;
+        line-height: 25px;
+        font-size: 15px;
+    }
+
+    .service-img-m {
+        width: 70vw;
+    }
+
+    .service-li-m {
+        padding: 2%;
+        border: 1px solid rgb(173, 170, 170);
+        border-radius: 8px;
+        margin-bottom: 5%;
+    }
+
+    .service-li-m h1 {
+        background: linear-gradient(90deg, #15F5BA, #0066ff);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    .service-li-m p {
+        color: rgb(213 210 210);
+        font-size: 15px;
+    }
+}
+
+/* Medium screens (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+    }
+
+    .service-text {
+        width: 90%;
+        margin: auto;
+    }
+
+    .slide-img {
+        width: 80%;
+    }
+
+    .vertical-line {
+        height: 200px;
+    }
+
+    .service-text h3 {
+        font-size: 22px;
+    }
+
+    .services-p {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .arrow-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+/* Large screens (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .services-container {
+        flex-direction: row;
+    }
+
+    .service-text {
+        width: 50%;
+    }
+
+    .slide-img {
+        width: 50%;
+    }
+
+    .vertical-line {
+        height: 250px;
+    }
+
+    .service-text h3 {
+        font-size: 24px;
+    }
+
+    .services-p {
+        width: 70%;
+        font-size: 17px;
+    }
+
+    .arrow-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
+
+/* Extra-large screens (1025px and above) */
+@media (min-width: 1025px) {
+    .services-section {
+        height: 90vh;
+    }
+
+    .slide-img {
+        width: 50%;
+    }
+
+    .vertical-line {
+        height: 300px;
+    }
+
+    .services-p {
+        width: 60%;
+        font-size: 18px;
+    }
+
+    .service-text h3 {
+        font-size: 26px;
+    }
+
+    .arrow-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+.arrow-btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 20px;
+    width: 20px;
+    margin: 10px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+
+.arrow-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000;
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
